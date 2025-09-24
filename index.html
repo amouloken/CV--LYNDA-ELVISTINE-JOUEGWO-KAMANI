@@ -122,6 +122,12 @@ a{ word-break: break-word; overflow-wrap: anywhere; }
     .page{max-width:100%; border:none}
     aside{border-right:1px solid #bbb}
     .card, .left-block, .job{page-break-inside:avoid}
+    @media print {
+   .hide-print { 
+      display: none !important;
+   }
+}
+
   }
 </style>
 </head>
@@ -139,7 +145,7 @@ a{ word-break: break-word; overflow-wrap: anywhere; }
       <!-- Photo locale : mets le fichier à côté du HTML (ex. /images/lynda.jpg) -->
       <!-- Évite C:/... ; utilise un chemin relatif -->
        <img src="https://raw.githubusercontent.com/amouloken/CV--LYNDA-ELVISTINE-JOUEGWO-KAMANI/main/LyndaPicture.jpg"
-       alt="Photo de profil"
+       alt="Photo de profil hide-print"
        class="profil-photo" />
 
       <div class="left-block">
