@@ -72,6 +72,47 @@
   .tasks{margin:0; padding-left:18px; font-size:14px; line-height:1.6}
   .btn{display:inline-block; background:var(--accent); color:#fff; padding:10px 14px; border-radius:6px; text-decoration:none}
   .btn:hover{opacity:.92}
+/* ---------- Mobile-first / petits écrans ---------- */
+:root{
+  /* tailles fluides pour titres */
+  --h1: clamp(26px, 6.5vw, 44px);
+  --h2: clamp(14px, 3.8vw, 18px);
+  --base: clamp(13px, 3.6vw, 15px);
+}
+
+.header h1{ font-size: var(--h1); }
+.subtitle{ font-size: var(--h2); }
+
+main p, main li, .l-item, .bullets{ font-size: var(--base); }
+
+/* éviter les débordements des liens/emails sur mobile */
+a{ word-break: break-word; overflow-wrap: anywhere; }
+
+/* Photo plus petite sur mobile */
+@media (max-width: 600px){
+  .header{ padding: 22px 14px; }
+  .page{ grid-template-columns: 1fr; padding: 0 10px; }
+  aside{ padding: 18px 14px; }
+  main{ padding: 18px 14px 28px; }
+
+  .profil-photo{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 12px;
+  }
+
+  /* cartes et listes plus compactes */
+  .card{ padding: 6px 10px 4px; }
+  .tasks{ padding-left: 16px; }
+  .left-block{ padding: 10px 10px 6px; }
+  .left-title{ font-size: 13px; }
+}
+
+/* Tablettes : garder 2 colonnes mais réduire un peu la sidebar */
+@media (min-width: 601px) and (max-width: 900px){
+  .page{ grid-template-columns: 260px 1fr; padding: 0 14px; }
+  .profil-photo{ width: 110px; height: 110px; }
+}
 
   /* ===== Impression : éviter gros blancs et coupures moches ===== */
   @media print{
@@ -95,8 +136,7 @@
     <aside>
       <!-- Photo locale : mets le fichier à côté du HTML (ex. /images/lynda.jpg) -->
       <!-- Évite C:/... ; utilise un chemin relatif -->
-       <img src="https://raw.githubusercontent.com/amouloken/CV--LYNDA-ELVISTINE-JOUEGWO-KAMANI
-/main/LyndaPicture.jpg"
+       <img src="https://raw.githubusercontent.com/amouloken/CV--LYNDA-ELVISTINE-JOUEGWO-KAMANI/main/LyndaPicture.jpg"
        alt="Photo de profil"
        class="profil-photo" />
 
