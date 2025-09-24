@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>LYNDA ELVISTINE JOUEGWO KAMANI – Candidature stage éducatrice spécialisée</title>
+<style>
+  :root{
+    --header:#3d3d3f;         /* bandeau sombre */
+    --sidebar:#cfd9df;        /* bleu-gris (colonnes gauche) */
+    --line:#9aa6ad;           /* traits colonne gauche */
+    --text:#2a2a2a;
+    --muted:#4f4f4f;
+    --accent:#3d3d3f;         /* titres section droite */
+    --paper:#ffffff;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--paper);color:var(--text);font-family: "Georgia","Times New Roman",serif}
+
+  /* ===== En-tête ===== */
+  .header{
+    background:var(--header); color:#fff; text-align:center;
+    padding:34px 20px;
+    border-bottom:6px solid var(--paper);
+  }
+  .header h1{
+    margin:0; font-size:44px; line-height:1.1; letter-spacing:.6px; text-transform:uppercase;
+  }
+  .subtitle{margin-top:10px; font-size:18px; letter-spacing:2px}
+
+  /* ===== Grille ===== */
+  .page{
+    max-width:1100px; margin:0 auto;
+    display:grid; grid-template-columns: 320px 1fr;
+    gap:0;
+    border-left:1px solid #ddd; border-right:1px solid #ddd;
+  }
+  @media (max-width: 900px){ .page{grid-template-columns:1fr} }
+
+  /* ===== Colonne gauche ===== */
+  aside{
+    background:var(--sidebar);
+    padding:22px 20px;
+    border-right:1px solid #d3dbe0;
+  }
+  .left-block{background:rgba(255,255,255,.35); border:1px solid var(--line); padding:14px 14px 8px; margin-bottom:12px}
+  .left-title{
+    font-family:Arial,Helvetica,sans-serif; font-weight:700; text-transform:uppercase;
+    color:#2d2f31; font-size:14px; margin:0 0 6px;
+    border-bottom:2px solid var(--line); padding-bottom:6px;
+  }
+  .l-item{display:flex; gap:8px; align-items:flex-start; margin:6px 0; font-family:Arial,Helvetica,sans-serif; font-size:14px}
+  .icon{width:18px; text-align:center}
+  .bullets{margin:4px 0 0 16px; padding:0; font-family:Arial,Helvetica,sans-serif; font-size:14px}
+  .bullets li{margin:4px 0}
+  .profil-photo{
+    display:block; margin:0 auto 14px; width:120px; height:120px; object-fit:cover;
+    border-radius:50%; border:4px solid #fff; box-shadow:0 6px 18px rgba(0,0,0,.25);
+  }
+
+  /* ===== Colonne droite ===== */
+  main{padding:24px 28px 40px 28px; background:var(--paper)}
+  main p, main li{font-family:Arial,Helvetica,sans-serif}
+  .intro{margin:12px 0 20px; font-size:15px; line-height:1.75}
+  .section-title{
+    font-family:Arial,Helvetica,sans-serif; text-transform:uppercase; font-weight:700; letter-spacing:1px;
+    color:var(--accent); font-size:18px; margin:16px 0 10px; border-bottom:3px solid var(--accent); padding-bottom:6px;
+  }
+  .card{margin:12px 0 6px; border-left:4px solid var(--accent); padding:6px 12px 4px}
+  .card h3{margin:0 0 4px; font-size:16px; font-family:"Georgia","Times New Roman",serif}
+  .meta{color:var(--muted); font-style:italic; font-size:13px; margin:2px 0 6px}
+  .tasks{margin:0; padding-left:18px; font-size:14px; line-height:1.6}
+  .btn{display:inline-block; background:var(--accent); color:#fff; padding:10px 14px; border-radius:6px; text-decoration:none}
+  .btn:hover{opacity:.92}
+
+  /* ===== Impression : éviter gros blancs et coupures moches ===== */
+  @media print{
+    .header{padding:18px 16px}
+    .page{max-width:100%; border:none}
+    aside{border-right:1px solid #bbb}
+    .card, .left-block, .job{page-break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+  <!-- Bandeau -->
+  <header class="header">
+    <h1>LYNDA ELVISTINE<br>JOUEGWO KAMANI</h1>
+    <div class="subtitle">CANDIDATURE STAGE – ÉDUCATRICE SPÉCIALISÉE (1<sup>RE</sup> ANNÉE)</div>
+  </header>
+
+  <div class="page">
+    <!-- Colonne gauche (encapsulée : plus de débordement) -->
+    <aside>
+      <!-- Photo locale : mets le fichier à côté du HTML (ex. /images/lynda.jpg) -->
+      <!-- Évite C:/... ; utilise un chemin relatif -->
+       <img src="https://raw.githubusercontent.com/amouloken/CV--LYNDA-ELVISTINE-JOUEGWO-KAMANI
+/main/LyndaPicture.jpg"
+       alt="Photo de profil"
+       class="profil-photo" />
+
+      <div class="left-block">
+        <div class="left-title">COORDONNÉES</div>
+        <div class="l-item"><span class="icon">📍</span><span>rue georges lorand, 1050, brussel</span></div>
+        <div class="l-item"><span class="icon">📞</span><span>+32466266373</span></div>
+        <div class="l-item"><span class="icon">✉️</span><span><a href="mailto:Lyndakamani296@gmail.com">Lyndakamani296@gmail.com</a></span></div>
+        <div class="l-item"><span class="icon">📅</span><span>mercredi, jeudi, vendredi, dimanche</span></div>
+      </div>
+
+      <div class="left-block">
+        <div class="left-title">COMPÉTENCES (STAGE)</div>
+        <ul class="bullets">
+          <li>Relation d’aide, écoute active, reformulation</li>
+          <li>Animation d’activités du quotidien</li>
+          <li>Observation, transmission, travail en équipe</li>
+          <li>Rigueur, ponctualité, sens du service</li>
+          <li>Bureautique & outils collaboratifs (bases)</li>
+        </ul>
+      </div>
+
+      <div class="left-block">
+        <div class="left-title">VALEURS & POSTURE</div>
+        <ul class="bullets">
+          <li>Respect & dignité</li>
+          <li>Autonomie & participation</li>
+          <li>Écoute empathique</li>
+          <li>Équité</li>
+          <li>Éthique & confidentialité</li>
+        </ul>
+      </div>
+
+      <div class="left-block">
+        <div class="left-title">CENTRES D’INTÉRÊT</div>
+        <ul class="bullets">
+          <li>Cinéma, arts, gastronomie</li>
+          <li>Chant, sport, voyages</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Colonne droite -->
+    <main>
+      <p class="intro">
+        Étudiante en 1<sup>re</sup> année « Éducateur·trice spécialisé·e en accompagnement psycho-éducatif », je recherche un
+        <strong>stage d’immersion</strong> pour développer mes compétences en relation d’aide, co-construction de projets et
+        observation du quotidien. Je m’engage à respecter le cadre éthique, la confidentialité et les protocoles de la structure d’accueil.
+      </p>
+
+      <div class="section-title">ATOUTS POUR LE TERRAIN</div>
+
+      <div class="card">
+        <h3>Relation & accompagnement</h3>
+        <div class="meta">Posture bienveillante • écoute active • cadre et limites</div>
+        <ul class="tasks">
+          <li>Créer un climat sécurisant et respectueux.</li>
+          <li>Favoriser l’autonomie et la participation des bénéficiaires.</li>
+          <li>Observer, noter et transmettre fidèlement les informations.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Vie quotidienne & activités</h3>
+        <div class="meta">Organisation • hygiène • sécurité</div>
+        <ul class="tasks">
+          <li>Participation aux temps de vie (repas, activités, sorties).</li>
+          <li>Animation d’activités simples et adaptées au public.</li>
+          <li>Attention aux règles d’hygiène et de sécurité des lieux.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Travail d’équipe</h3>
+        <div class="meta">Communication • fiabilité • entraide</div>
+        <ul class="tasks">
+          <li>Respect des consignes et du projet éducatif.</li>
+          <li>Coordination avec l’équipe pluridisciplinaire.</li>
+          <li>Retour réflexif et demande de supervision.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Compétences transférables</h3>
+        <div class="meta">Restauration • vente • accueil</div>
+        <ul class="tasks">
+          <li>Gestion du stress et sens du service.</li>
+          <li>Contact usager, attitude bienveillante, résolution de petits conflits.</li>
+          <li>Rigueur, ponctualité, propreté et organisation.</li>
+        </ul>
+      </div>
+
+      <div class="section-title">EXPÉRIENCES (SÉLECTION)</div>
+
+      <div class="card" style="border-left-width:0; padding-left:0">
+        <h3>Serveuse & préparation des fingers food – <span style="font-weight:700">Burger Brang</span></h3>
+        <div class="meta">Quick d’Arlon, Arlon — Intérim • Sept. 2024 – Juil. 2025</div>
+        <ul class="tasks">
+          <li>Service, accueil, équipe, hygiène, encaissements.</li>
+        </ul>
+      </div>
+
+      <div class="card" style="border-left-width:0; padding-left:0">
+        <h3>Vendeuse</h3>
+        <div class="meta">ACTION d’Arlon, Arlon — Intérim • Nov. 2024 – Juin 2025</div>
+        <ul class="tasks">
+          <li>Conseil client, mise en rayon, caisse, réassort.</li>
+        </ul>
+      </div>
+
+      <div class="card" style="border-left-width:0; padding-left:0">
+        <h3>Brand Ambassador</h3>
+        <div class="meta">MIGRO Distributions, Cameroun — Intérim • Déc. 2020 – Juil. 2021</div>
+        <ul class="tasks">
+          <li>Animation, contrôle qualité, stocks, adaptation rapide.</li>
+        </ul>
+      </div>
+
+      <div class="section-title">FORMATION</div>
+
+      <div class="card" style="border-left-width:0; padding-left:0">
+        <h3>Bachelier – Sciences sociales (Éducateur·trice spécialisé·e)</h3>
+        <div class="meta">Louvain — Sept. 2025 – Août 2029 (prévu)</div>
+        <ul class="tasks">
+          <li>Accompagnement, projet éducatif, observation et transmission.</li>
+          <li>Éthique, confidentialité, participation et inclusion.</li>
+        </ul>
+      </div>
+
+      <div class="card" style="border-left-width:0; padding-left:0">
+        <h3>Master I – Science et gestion de l’environnement</h3>
+        <div class="meta">Université de Liège — Janv. 2024 – Janv. 2025</div>
+        <ul class="tasks">
+          <li>Méthode, analyse, rigueur et sens des responsabilités.</li>
+        </ul>
+      </div>
+
+      <p style="margin-top:18px">
+       
+      </p>
+    </main>
+  </div>
+</body>
+</html>
